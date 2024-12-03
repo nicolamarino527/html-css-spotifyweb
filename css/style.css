@@ -4,15 +4,97 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* ---------------------- wrapper---------------------- */
+/* ---------------------------------------- wrapper---------------------------------------- */
 #wrapper {
-    height: calc(100vh - 200px);
-    /* debug */
-    background-color: rgb(60, 71, 77);
+    display: flex;
+    height: calc(100vh - 150px);
+
 }
-/* ---------------------- player/controller ---------------------- */
+/* ------------------ side block ------------------ */
+#wrapper nav {
+    width: 200px;
+    height: 100%;
+    /* debug */
+    background-color: grey;
+}
+/* ------------------ main-block ------------------ */
+
+
+#wrapper main {
+    overflow: auto;
+    height: 100%;
+    width: calc(100% - 200px);
+    /* debug */
+    line-height: 40px;
+    background-color: rgb(18, 95, 163);
+}
+#main-top {
+    display: flex;
+    flex-direction: row-reverse;
+    /* debug */
+    height: 80px;
+    background-color: aqua;
+}
+#upgrde {
+    border: 1px solid;
+    width: 200px;
+    border-radius: 20px;
+}
+#categories {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;   
+}
+#recently-played {
+    display: flex;
+    flex-wrap: wrap;
+}
+.latest-songs {
+    margin: 10px;
+    /* debug */
+    height: 170px;
+    width: 170px;
+    background-color: rgb(55, 55, 55);
+}
+#mixes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mix {
+    margin: 10px;
+    /* debug */
+    height: 170px;
+    width: 170px;
+    background-color: rgb(55, 55, 55);
+}
+#popular-artist {
+    display: flex;
+    flex-wrap: wrap;
+}
+.popular {
+    margin: 10px;
+    /* debug */
+    height: 170px;
+    width: 170px;
+    background-color: rgb(55, 55, 55);
+    border-radius: 100%;
+}
+/* ---------------------------------------- player/controller ---------------------------------------- */
 #player {
     height: 150px;
     /* debug */
     background-color: rgb(63, 63, 63);
 }
+
+
+
+
+
+
+
+
+
+
+
+/* versione mobile */
+@media screen and (max-width:480px)
