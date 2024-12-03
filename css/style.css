@@ -8,7 +8,7 @@
 /* ---------------------------------------- wrapper---------------------------------------- */
 #wrapper {
     display: flex;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 80px);
 
 }
 /* ------------------ side block ------------------ */
@@ -22,7 +22,6 @@
 #wrapper nav {
     padding: 10px;
     width: 200px;
-    height: 100%;
     /* debug */
     background-color: grey;
 }
@@ -127,10 +126,30 @@ main p{
 }
 /* ---------------------------------------- player/controller ---------------------------------------- */
 #player {
-    height: 150px;
-    /* debug */
+    height: 80px;
     background-color: rgb(63, 63, 63);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+#player-left {
+    display: flex;
+}
+#player-center {
+    display: flex;
+    flex-wrap: wrap;
+}
+#player-right {
+    display: flex;
+    justify-content: center;
+}
+.little-block {
+    height: 20px;
+    width: 20px;
+    background: rgb(75, 75, 75);
+    border: 1px solid;
+}
+
 
 
 
