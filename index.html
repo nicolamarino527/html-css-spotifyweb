@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
@@ -43,13 +44,13 @@
             </section>
                 <div id="nav-bottom" >
                     <div class="menu">
-                        <img class="menu-option" src="img/profile.svg" alt="">
-                        <span class="menu-text disappear">John Doe</span>
+                        <img id="profile" src="img/profile.svg" alt="">
+                        <h5 id="profile-text" class="disappear">John Doe</h5>
                     </div>
-                    <div class="space">--------</div>
+                    <div class="space"></div>
                     <div class="menu">
-                        <img class="menu-option" src="img/download.svg" alt="">
-                        <span class="menu-text disappear">Installla app</span>
+                        <img id="install" src="img/download.svg" alt="">
+                        <span id="install-text" class="disappear">Installla app</span>
                     </div>
                 </div>
         </nav>
@@ -135,24 +136,36 @@
 
     <!-- palyer/controller -->
     <footer id="player">
+
         <section id="player-left">
-            <div class="little-block"></div>
-            <div class="little-block"></div>
-            <div class="little-block"></div>
-            <div class="little-block"></div>
+                <img class="player-img" src="img/sinister.jpeg" alt="">
+                <h6 class="player-text">sinister</h6>
+                <span class="player-text" >nome brano</span>
+            <div class="icons-small"></div>
+            <div class="icons-small"></div>
         </section>
         <section id="player-center">
-            <div class="little-block"></div>
-            <div class="little-block"></div>
-            <div class="little-block"></div>
-            <div class="little-block"></div>
-            <div class="little-block"></div>
+            <div>
+                <i class="fa-solid fa-shuffle icons-mid"></i>
+                <i class="fa-solid fa-backward-step icons-mid"></i>
+                <i class="fa-regular fa-circle-play icons-big"></i>
+                <i class="fa-solid fa-forward-step icons-mid"></i>
+                <i class="fa-solid fa-repeat icons-mid"></i>
+            </div>
+            <div id="song-player">
+                <span class="song-time">0:25</span>
+                <div id="song-lenth"></div>
+                <span class="song-time">4:25</span>
+                <div id="song"></div>
+                <div class="little-block"></div>
+            </div>
         </section>
         <section id="player-right">
-            <div class="little-block"></div>
-            <div class="little-block"></div>
-            <div class="little-block"></div>
-            <div class="little-block"></div>
+            <i class="fa-solid fa-list icons-small"></i>
+            <i class="fa-solid fa-display icons-small"></i>
+            <i class="fa-solid fa-volume-high icons-small"></i>
+            <div id="volume-bar"></div>
+            <div id="volume"></div>
         </section>
     </footer>
 </body>
