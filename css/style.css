@@ -9,7 +9,12 @@
 #wrapper {
     display: flex;
     height: calc(100vh - 80px);
-
+}
+.white {
+    color: #fff;
+}
+.grey {
+    color: rgb(155, 155, 155);
 }
 /* ---------------------------------------  side block ---------------------------------------  */
 #logo {
@@ -192,6 +197,18 @@ main p{
     align-items: center;
     width: 30%;
 }
+#song-name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    font-size: 12px;
+}
+#song-option {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    gap: 4px;
+}
 
 /* player center */
 
@@ -209,6 +226,7 @@ main p{
     width: 10%;
     color: #fff;
     font-size: 18px;
+    padding-top: 13px;
 }
 .icons-big {
     margin: 4px;
@@ -258,8 +276,6 @@ main p{
 }
 .icons-small{
     margin: 5px;
-    height: 10px;
-    width: 8px;
     color: #fff;
     font-size: 10px;
 }
@@ -277,11 +293,11 @@ main p{
     border-color: rgb(76, 76, 75);
     border-radius: 50px;
     margin: 5px;
-    width: 80px;
+    width: 72px;
 }
 #volume {
-    position: absolute;
-    right: 55px;
+    position: relative;
+    right: 90px;
     border: 2px solid;
     border-color: rgb(255, 255, 255);
     border-radius: 50px;
@@ -307,6 +323,9 @@ main p{
     }
     #song-lenth {
         width: 65%;
+    } 
+    #volume {
+        right: 45%;
     }
 }
 
@@ -336,8 +355,14 @@ main p{
     }
     #song-lenth {
         width: 50%;
+        margin: 14px;
     }
     #song {
         width: 10%;
+        right: 35px;
+        bottom: 23px;
+    }
+    #volume {
+        right: 38%;
     }
 }
