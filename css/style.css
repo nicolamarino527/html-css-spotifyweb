@@ -113,8 +113,8 @@ nav li {
     height: 1px;
     width: 100%;
 }
-/* ---------------------------------------  main-block ---------------------------------------  */
 
+/* ---------------------------------------  main-block ---------------------------------------  */
 
 #wrapper main {
     overflow: auto;
@@ -122,6 +122,9 @@ nav li {
     width: calc(100% - 200px);
     background-color: rgb(39, 43, 53);
 }
+
+/* top */
+
 #main-top {
     display: flex;
     flex-direction: row-reverse;
@@ -135,11 +138,12 @@ nav li {
     width: 200px;
     height: 50px;
     text-align: center;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 30px;
     border-color: rgb(155, 155, 155);
     background-color: rgb(24, 24, 36);
     color: rgb(155, 155, 155);
+    font-size: 15px;
 }
 #categories {
     display: flex;
@@ -152,6 +156,10 @@ nav li {
     line-height: 40px;
     color: rgb(164, 164, 164);
 }
+
+
+/* center */
+
 .main-titles {
     margin-left: 10px;
     margin-top: 20px;
@@ -173,17 +181,20 @@ main p{
     display: flex;
 }
 .songs {
-    margin: 10px;
+    margin: 5px;
     width: 15%;
     text-align: center;
+    position: relative;
 }
-.songs img{
+.songs-img{
     width:  100%;
 }
 .circle {
     border-radius: 100%;
 }
+
 /* ---------------------------------------- player/controller ---------------------------------------- */
+
 #player {
     height: 80px;
     background-color: rgb(54, 54, 54);
@@ -266,6 +277,7 @@ main p{
     width: 20%;
 }
 
+
 /* player-right */
 
 #player-right {
@@ -306,8 +318,80 @@ main p{
 }
 
 
+/* ------------------ hoover ------------------ */
+.position {
+    position: relative;
+}
+.songs-img:hover {
+    filter: brightness(20%);
+}
+.songs-img:hover .play-button {
+    display: block;
 
+}
+.play-button {
+    position: absolute;
+    top: 38%;
+    left: 46%;
+    color: #fff;
+    display: none;
+}
+#upgrade:hover {
+    margin-top: 11px;
+    margin-right: 7px;
+    padding-top: 15px;
+    width: 210px;
+    height: 55px;
+    text-align: center;
+    font-size: 16px;
+}
+.category:hover {
+    color: #fff;
+}
+.menu:hover {
+    color: #fff;
+    filter: brightness(100%);
+}
+.menu-option:hover {
+    color: #fff;
+    filter: brightness(100%);
+}
+.menu-text:hover {
+    color: #fff;
+}
+nav li:hover {
+    color: #fff;
+}
+#underline {
+}
+#underline:hover {
+    text-decoration: underline;
+}
+#install-text:hover {
+    color: #fff;
+}
+.grey:hover {
+    color: #fff;
+}
+.dot {
+    position: relative;
+    bottom: 19px;
+    right: 28%;
+    border: 7px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    display: none;
+}
+#song:hover .dot {
+    display: block;
+}
+#song:hover {
+    border-color: rgb(196, 245, 101);
+}
 
+#volume:hover {
+    border-color: rgb(196, 245, 101);
+}
 
 
 
